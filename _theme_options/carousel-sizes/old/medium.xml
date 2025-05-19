@@ -1,0 +1,97 @@
+<!-- Theme by pajarorrojo
+https://github.com/pajarorrojo/es-theme-PlayStation-X 
+-->
+<theme>
+   <formatVersion>7</formatVersion>
+   <view name="system">
+      <!-- CARRUSEL MEDIANO -->
+      <carousel name="systemcarousel">
+         <logoSize>0.195</logoSize>
+         <logoScale>1.485</logoScale>
+         <scaledLogoSpacing>1.05</scaledLogoSpacing>
+         <maxLogoCount>15</maxLogoCount>
+
+         <pos>-0.595 0.115</pos>
+         <pos ifSubset="aspect-ratio:16-9">-0.595 0.115</pos>
+         <pos ifSubset="aspect-ratio:16-10">-0.680 0.116</pos>
+         <pos ifSubset="aspect-ratio:4-3">-0.94 0.115</pos>
+         <pos ifSubset="aspect-ratio:5-4">-1.028 0.115</pos>
+         <pos ifSubset="aspect-ratio:3-2">-0.75 0.115</pos>
+         <pos ifSubset="aspect-ratio:5-3">-0.665 0.115</pos>
+
+         
+         <size>1.68 1</size>
+         <size ifSubset="aspect-ratio:16-9">1.68 1</size>
+         <size ifSubset="aspect-ratio:16-10">1.87 1</size>
+         <size ifSubset="aspect-ratio:4-3">2.23 1</size>
+         <size ifSubset="aspect-ratio:5-4">2.42 1</size>
+         <size ifSubset="aspect-ratio:3-2">2.02 1</size>
+         <size ifSubset="aspect-ratio:5-3">1.83 1</size>
+
+
+      </carousel>
+
+      <image name="marco-activo" extra="static">
+         <pos>0.162 0.132</pos>
+         <pos ifSubset="aspect-ratio:16-9|16-10">0.162 0.132</pos>
+         <pos ifSubset="aspect-ratio:4-3|9-16|5-4">0.063 0.132</pos>
+
+         <maxSize>0.347</maxSize>
+         <maxSize ifSubset="aspect-ratio:3-2">0.346</maxSize>
+
+         <origin>0 0</origin>
+      </image>
+
+      <text name="start" extra="true">
+         <pos>0.165 0.424</pos>
+         <pos ifSubset="aspect-ratio:16-9">0.165 0.424</pos>
+         <pos ifSubset="aspect-ratio:16-10">0.165 0.424</pos>
+         <pos ifSubset="aspect-ratio:4-3">0.067 0.425</pos>
+
+         <pos ifSubset="aspect-ratio:5-4">0.063 0.423</pos>
+         <pos ifSubset="aspect-ratio:5-3">0.165 0.424</pos>
+         <pos ifSubset="aspect-ratio:3-2">0.165 0.423</pos>
+
+         <size>0.16 0.05</size>
+         <size ifSubset="aspect-ratio:16-9">0.161 0.05</size>
+         <size ifSubset="aspect-ratio:4-3">0.215 0.051</size>
+         <size ifSubset="aspect-ratio:16-10">0.18 0.052</size>
+         <size ifSubset="aspect-ratio:3-2">0.190 0.051</size>
+         <size ifSubset="aspect-ratio:5-3">0.172 0.051</size>
+         <size ifSubset="aspect-ratio:5-4">0.235 0.051</size>
+
+         <fontSize>0.03</fontSize>
+      </text>
+
+      <text name="system_name" extra="true">
+         <text>{system:fullName}.proper()</text>
+         <pos>0.335 0.451</pos>
+         <pos ifSubset="aspect-ratio:16-9">0.335 0.451</pos>
+         <pos ifSubset="aspect-ratio:4-3|9-16">0.295 0.451</pos>
+         <pos ifSubset="aspect-ratio:3-2">0.364 0.453</pos>
+         <pos ifSubset="aspect-ratio:16-10">0.353 0.451</pos>
+         <pos ifSubset="aspect-ratio:5-3">0.345 0.451</pos>
+         <pos ifSubset="aspect-ratio:5-4">0.305 0.451</pos>
+      </text>
+
+      <text name="fullName" extra="true">
+         <pos>0.164 0.136</pos>
+         <pos ifSubset="aspect-ratio:16-9|16-10">0.164 0.136</pos>
+         <pos ifSubset="aspect-ratio:4-3|5-4">0.066 0.136</pos>
+         <pos ifSubset="aspect-ratio:5-3">0.165 0.137</pos>
+
+         <size>0.161 0.288</size>
+         <size ifSubset="aspect-ratio:16-9">0.161 0.288</size>
+         <size ifSubset="aspect-ratio:4-3">0.216 0.288</size>
+         <size ifSubset="aspect-ratio:16-10">0.18 0.288</size>
+         <size ifSubset="aspect-ratio:3-2">0.190 0.288</size>
+         <size ifSubset="aspect-ratio:5-3">0.172 0.287</size>
+         <size ifSubset="aspect-ratio:5-4">0.232 0.288</size>
+
+         <fontSize>0.028</fontSize>
+
+      </text>
+
+   </view>
+
+</theme>

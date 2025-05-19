@@ -1,0 +1,62 @@
+<theme>
+     <formatVersion>7</formatVersion>
+     <view name="system">
+          <video name="system_video" extra="true">
+               <size>0.430 0.403</size>
+               <effect>none</effect>
+               <roundCorners>10</roundCorners>
+               <showSnapshotNoVideo>false</showSnapshotNoVideo>
+               <showSnapshotDelay>false</showSnapshotDelay>
+               <default>./../../_theme_inc/videos/no-video.mp4</default>
+               <path ifSubset="video-system-random:enable-random|enable-ifnospot">{random}</path>
+               <path ifSubset="video-system-random:disable-random|enable-ifnospot">./../../_theme_inc/videos/${system.theme}.mp4</path>
+               <zIndex>70</zIndex>
+               <audio ifSubset="video-system-audio:disable-audio">false</audio>
+          </video>
+
+
+          <text name="system_description" extra="true">
+               <backgroundColor>ff000000</backgroundColor>
+           </text>
+
+
+          <video name="system_video" extra="true" ifSubset="carousel:big" >
+               <pos>0.492 0.110</pos>
+          </video>
+
+
+          <text name="system_description" extra="true" ifSubset="carousel:big">
+               <size>0.430 0.220</size>
+               <fontSize>0.023</fontSize>
+               <pos>0.493 0.61</pos>
+          </text>
+
+
+          <video name="system_video" extra="true" ifSubset="carousel:medium" >
+               <pos>0.02 0.512</pos>
+          </video>
+
+
+          <text name="system_description" extra="true" ifSubset="carousel:medium">
+               <size>0.54 0</size>
+               <pos>0.26 0.512</pos>
+               <fontSize>0.026</fontSize>
+               
+
+          </text>
+
+
+          <video name="system_video" extra="true" ifSubset="carousel:small" >
+               <pos>0.02 0.46</pos>
+          </video>
+
+
+          <text name="system_description" extra="true" ifSubset="carousel:small">               
+               <size>0.54 0</size>
+               <fontSize>0.026</fontSize>
+               <pos>0.26 0.46</pos>
+          </text>
+
+
+     </view>
+</theme>

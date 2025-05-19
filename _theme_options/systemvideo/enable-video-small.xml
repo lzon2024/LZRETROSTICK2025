@@ -1,0 +1,48 @@
+
+<theme>
+     <formatVersion>7</formatVersion>
+     <view name="system">
+         
+
+          <text name="system_description" extra="true">
+               <backgroundColor>ff000000</backgroundColor>
+           </text>
+
+
+         
+
+          <text name="system_description" extra="true" ifSubset="carousel:big">
+               <size>0.430 0.220</size>
+               <fontSize>0.019</fontSize>
+               <pos>0.210 0.61</pos>
+          </text>
+# -------------------------------------------------------------------------------------
+
+          <video name="system_video" extra="true" ifSubset="carousel:medium" >
+               <pos>0.062 0.625</pos>
+          </video>
+
+
+          <text name="system_description" extra="true" ifSubset="carousel:medium">
+               <size>0.59 0</size>
+               <fontSize>0.026</fontSize>
+               <pos>0.530 0.762</pos>
+
+
+          </text>
+#--------------------------------------------------------------------------------------
+
+          <video name="system_video" extra="true" ifSubset="carousel:small" >
+               <pos>0.062 0.625</pos>
+          </video>
+
+
+          <text name="system_description" extra="true" ifSubset="carousel:small">               
+               <size>0.54 0</size>
+               <fontSize>0.026</fontSize>
+               <pos>0.390 0.602</pos>
+          </text>
+
+
+     </view>
+</theme>

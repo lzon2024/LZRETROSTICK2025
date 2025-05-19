@@ -1,0 +1,52 @@
+<theme>
+   <formatVersion>7</formatVersion>
+   <view name="system">
+      <!-- CARRUSEL GRANDE -->
+      <carousel name="systemcarousel">
+         <origin>0 0</origin>
+         <logoScale>1.685</logoScale>
+         <logoSize>0.403</logoSize>
+
+         <pos>-0.5094 0.0700</pos>
+         <size>1.59 0.90</size>
+         <maxLogoCount>1</maxLogoCount>
+      </carousel>
+
+    <!-- #### TELA VERDE #### -->
+      <image name="marco-activo" extra="static">
+         <origin>0 0</origin>
+         <pos>0.0930 0.100</pos>
+         <size>0.483 0.710</size>
+         <zIndex>0</zIndex>
+      </image>
+      
+   
+
+      <text name="start" extra="true">
+         <size>0.489 0.100</size>
+         <pos>-0.0094 0.790</pos>
+         <fontSize>0.032</fontSize>
+      </text>
+
+      <text name="system_name" extra="true">
+         <!-- AVERIGUAR EL NOMBRE DE LA CARPETA DEL SISTEMA
+         <text>${system.name}</text> -->
+         <text>${system.fullName}</text>
+         <size>1.61 1.61</size>
+         <color>ff000000</color>
+         <pos>0.4930 0.57</pos>
+     
+
+      </text>
+
+    <text name="fullName" extra="true">
+         <pos>0.166 0.135</pos>
+         <size>0 0.37</size>
+         <color>ff000000</color>
+         <fontSize>0.036</fontSize>
+      </text>     
+
+
+   </view>
+
+</theme>

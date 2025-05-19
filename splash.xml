@@ -1,0 +1,206 @@
+﻿<!-- Theme by pajarorrojo
+https://github.com/pajarorrojo/es-theme-PlayStation-X 
+-->
+<theme>
+	<formatVersion>7</formatVersion>
+	<include>${themePath}/theme.xml</include>
+
+
+	<view name="splash">
+
+		<text name="label">
+			<fontPath>${themePath}/_theme_inc/fonts/SST Light.ttf</fontPath>
+			<pos>0 0.703</pos>
+			<color>${splash.labelColor}</color>
+			<fontSize>0.030</fontSize>
+			<fontSize ifSubset="aspect-ratio:4-3|5-4" tinyScreen="true">0.023</fontSize>
+			<alignment>center</alignment>
+			<glowColor>00000035</glowColor>
+			<glowSize>1</glowSize>
+			<glowOffset>3 2</glowOffset>
+		</text>
+
+		<image name="progressbar">
+			<origin>0 0</origin>
+			<pos>0.250 0.703</pos>
+			<rotation>0</rotation>
+			<rotationOrigin>1.1 1.6</rotationOrigin>
+			<color>${splash.progressbar}</color>
+		</image>
+
+		<image name="progressbar:active">
+			<color>${splash.progressbarActive}</color>
+			<colorEnd>${splash.progressbarActiveEnd}</colorEnd>
+			<gradientType>vertical</gradientType>
+			<size>0.5 0.04</size>
+		</image>
+
+		<image name="background">
+			<linearSmooth>true</linearSmooth>
+			<path ifSubset="colorset:blue">${themePath}/_theme_options/colorsets/blue/background.jpg</path>
+			<path ifSubset="colorset:black">${themePath}/_theme_options/colorsets/black/background.jpg</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+			<minSize>1 1</minSize>
+			<zIndex>00</zIndex>
+		</image>
+
+		<image name="hotkey-tips" extra="true" ifSubset="hotkey-guide:YES|both|splash">
+			<origin>1 0.5</origin>
+			<pos>1 0.443</pos>
+			<maxSize>0.35</maxSize>
+			<maxSize tinyScreen="true">0.45</maxSize>
+			<path>${themePath}/_theme_inc/images/hotkey-tips/en.png</path>
+			<path>${themePath}/_theme_inc/images/hotkey-tips/${lang}.png</path>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>9999</zIndex>
+		</image>
+
+		<text name="region" extra="true">
+			<origin>0 0</origin>
+			<pos>-0.02 0.945</pos>
+			<size>1 0.05</size>
+			<color>ffffff</color>
+			<fontPath>${themePath}/_theme_inc/fonts/SST Roman.ttf</fontPath>
+			<fontSize>0.026</fontSize>
+			<fontSize tinyScreen="true">0.031</fontSize>
+			<alignment>right</alignment>
+			<glowColor>00000035</glowColor>
+			<glowSize>1</glowSize>
+			<glowOffset>3 2</glowOffset>
+			<zIndex>60</zIndex>
+			<backgroundColor>ff000000</backgroundColor>
+		</text>
+		<text name="region" extra="true" region="eu">
+			<text>${theme.region}: ${theme.europe}</text>
+		</text>
+		<text name="region" extra="true" region="jp">
+			<text>${theme.region}: ${theme.japan}</text>
+		</text>
+		<text name="region" extra="true" region="us">
+			<text>${theme.region}: ${theme.usa}</text>
+		</text>
+
+		<text name="version" extra="true">
+			<text>Theme by pajarorrojo - Version 41</text>
+			<pos>0.02 0.951</pos>
+			<color>999999</color>
+			<fontPath>${themePath}/_theme_inc/fonts/SST Roman.ttf</fontPath>
+			<fontSize>0.0220</fontSize>
+			<alignment>left</alignment>
+			<zIndex>99</zIndex>
+		</text>
+
+
+		<image name="logo-splash" extra="true">
+			<origin>0 0</origin>
+			<pos>0.03 0.05</pos>
+			<maxSize>0.25 0.25</maxSize>
+			<maxSize ifSubset="aspect-ratio:4-3|5-4">0.1 0.1</maxSize>
+			<path ifSubset="frontend:batocera">${themePath}/_theme_inc/images/batocera-logo-splash.svg</path>
+			<path ifSubset="frontend:retrobat">${themePath}/_theme_inc/images/retrobat-logo-splash.png</path>
+			<path ifSubset="frontend:batocera-plus">${themePath}/_theme_inc/images/batocera_plus_logo.png</path>
+			<path ifSubset="frontend:emuelec">${themePath}/_theme_inc/images/emuelec-logo-splash.png</path>
+			<path ifSubset="frontend:projectarcade">${themePath}/_theme_inc/images/projectarcade-logo.png</path>
+			<path ifSubset="frontend:jelos">${themePath}/_theme_inc/images/jelos-logo-splash.png</path>
+			<path ifSubset="frontend:emulationstation">${themePath}/_theme_inc/images/es-logo-splash.png</path>
+			<linearSmooth>true</linearSmooth>
+		</image>
+
+
+		<text name="welcome" extra="true">
+			<text ifSubset="frontend:batocera">${theme.welcome} Batocera</text>
+			<text ifSubset="frontend:retrobat">${theme.welcome} Retrobat</text>
+			<text ifSubset="frontend:batocera-plus">${theme.welcome} Batocera Plus</text>
+			<text ifSubset="frontend:emuelec">${theme.welcome} EmuElec</text>
+			<text ifSubset="frontend:projectarcade">${theme.welcome} ProjectArcade</text>
+			<text ifSubset="frontend:jelos">${theme.welcome} JELOS</text>
+			<text ifSubset="frontend:emulationstation">${theme.welcome} EmulationStation</text>
+			<text ifSubset="frontend:no-frontend">${theme.welcome} EmulationStation</text>
+			<color>ffffff</color>
+			<fontPath>${themePath}/_theme_inc/fonts/SST Light.ttf</fontPath>
+			<fontSize>0.04</fontSize>
+			<fontSize ifSubset="aspect-ratio:4-3|5-4">0.038</fontSize>
+			<fontSize ifSubset="aspect-ratio:4-3|5-4" tinyScreen="true">0.03</fontSize>
+			<alignment>center</alignment>
+			<glowColor>00000035</glowColor>
+			<glowSize>1</glowSize>
+			<glowOffset>3 2</glowOffset>
+			<zIndex>60</zIndex>
+			<backgroundColor>ff000000</backgroundColor>
+			<origin>0.5 0</origin>
+			<pos>0.5 0</pos>
+			<size>0.5 0.3</size>
+		</text>
+
+		<image name="avatarFrame" extra="true">
+			<origin>0.5 0</origin>
+			<path>${themePath}/_theme_inc/images/frame-splash.png</path>
+			<pos>0.5 0.326</pos>
+			<maxSize>0.255 0.255</maxSize>
+
+			<linearSmooth>true</linearSmooth>
+			<zIndex>9</zIndex>
+		</image>
+
+		<image name="avatar" extra="true">
+			<origin>0.5 0</origin>
+			<pos>0.498 0.34</pos>
+			<maxSize>0.222 0.222</maxSize>
+			<backgroundColor>ff000000</backgroundColor>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>10</zIndex>
+		</image>
+
+
+		<text name="username" extra="true">
+			<text>${theme.nick}</text>
+			<text ifSubset="system-username:custom">${custom.nick}</text>
+			<pos>0 0.58</pos>
+			<size>1 0.034</size>
+			<color>ffffff</color>
+			<fontPath>${themePath}/_theme_inc/fonts/SST Light.ttf</fontPath>
+			<fontSize>0.038</fontSize>
+			<alignment>center</alignment>
+			<glowColor>00000035</glowColor>
+			<glowSize>1</glowSize>
+			<glowOffset>3 2</glowOffset>
+			<zIndex>99</zIndex>
+			<backgroundColor>ff000000</backgroundColor>
+		</text>
+
+		<image name="linea-inferior" extra="static">
+			<path>${themePath}/_theme_inc/images/pixel-blanco.png</path>
+			<pos>0 0.935</pos>
+			<size>1 0.002</size>
+			<size tinyScreen="true">1 0.005</size>
+         	<color ifSubset="colorset:black">0070d1</color>
+			<backgroundColor>ff000000</backgroundColor>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>99</zIndex>
+		</image>
+
+		<!-- CONFIGURACION EXTRA PARA AVATARES -->
+		<image name="avatar" extra="true">
+			<path>${themePath}/_theme_options/avatars/${image.avatar}</path>
+			<path ifSubset="system-avatar:custom">${themePath}/custom-avatar.png</path>
+			<path ifSubset="system-avatar:cheevos">${themePath}/_theme_options/avatars/ps-x-logo-avatar.png</path>
+		</image>
+		<!--
+		<webimage name="avatar-test"  extra="true">
+			<path>https://media.retroachievements.org/UserPic/pajarorrojo.png</path>
+			<path>https://media.retroachievements.org/UserPic/${global.cheevos.username}.png</path>
+			<pos>0.618 0.035</pos>
+			<pos ifSubset="aspect-ratio:4-3|5-4">0.613 0.035</pos>
+			<maxSize>0.063 0.063</maxSize>
+			<zIndex>99</zIndex>
+			<linearSmooth>true</linearSmooth>
+		  </webimage>
+		-->
+	</view>
+	<include>${themePath}/custom-username.xml</include>
+	<include>${themePath}/_theme_options/usernames.xml</include>
+	<include>${themePath}/_theme_options/avatars.xml</include>
+
+
+</theme>
